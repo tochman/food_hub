@@ -15,6 +15,7 @@ gem 'devise'
 gem 'omniauth-facebook', '~> 4.0'
 gem 'pundit'
 gem 'redis', '~> 3.0'
+gem 'facebook-messenger'
 
 
 group :development, :test do
