@@ -26,6 +26,9 @@ module FoodHub
       generate.system_tests false
   end
 
-  config.generators.system_tests = nil
+  config.paths.add File.join("app", "bot"), glob: File.join("**","*.rb")
+  config.autoload_paths += Dir[Rails.root.join("app", "bot", "*")]
+  config.action_controller.default_url_options = { host: 'f3213182.ngrok.io' }
+
   end
 end

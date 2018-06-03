@@ -50,6 +50,7 @@ GEM
     backports (3.11.3)
     bcrypt (3.1.11)
     bindex (0.5.0)
+    blankslate (3.1.3)
     bootsnap (1.3.0)
       msgpack (~> 1.0)
     builder (3.2.3)
@@ -104,7 +105,7 @@ GEM
     erubi (1.7.1)
     erubis (2.7.0)
     execjs (2.7.0)
-    facebook-messenger (1.0.0)
+    facebook-messenger (0.11.1)
       httparty (~> 0.13, >= 0.13.7)
       rack (>= 1.6.4)
     factory_bot (4.8.2)
@@ -137,6 +138,8 @@ GEM
       multi_xml (>= 0.5.2)
     i18n (1.0.1)
       concurrent-ruby (~> 1.0)
+    ingreedy (0.0.9)
+      parslet (~> 1.7.0, >= 1.7.0)
     json (2.1.0)
     jwt (1.5.6)
     launchy (2.4.3)
@@ -183,6 +186,8 @@ GEM
       oauth2 (~> 1.1)
       omniauth (~> 1.2)
     orm_adapter (0.5.0)
+    parslet (1.7.1)
+      blankslate (>= 2.0, <= 4.0)
     pg (1.0.0)
     pry (0.11.3)
       coderay (~> 1.1.0)
@@ -321,9 +326,10 @@ DEPENDENCIES
   cucumber-rails (~> 1.6)
   database_cleaner
   devise
-  facebook-messenger
+  facebook-messenger (~> 0.11.1)
   factory_bot_rails
   haml-rails (~> 1.0)
+  ingreedy (~> 0.0.9)
   launchy
   listen (>= 3.0.5, < 3.2)
   omniauth-facebook (~> 4.0)
